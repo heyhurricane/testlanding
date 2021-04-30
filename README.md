@@ -1,2 +1,2 @@
 # testlanding
-https://heyhurricane.github.io/testlanding/src
+https://heyhurricane.github.io/testlanding/dist
