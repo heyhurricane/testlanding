@@ -54,16 +54,40 @@
       margin-bottom: 47px
   .feedback-swiper-container
     margin-bottom: 20px
+  .card
+    &-swiper
+      &-slide
+        &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(5)
+          .card
+            margin-top: 20px
+  .advantage
+    &:nth-of-type(1) 
+      .image
+        left: -28%
 
 @media screen and ( max-width: 768px )  
   .join
     &__text
       font-size: 22px
+  .feedback
+     &-slide
+      &:nth-of-type(3)
+        .feedback
+          margin-top: 30px
 
 @media screen and ( max-width: 576px )  
   .hero 
     &__text
       font-size: 20px
+  .feedback
+    &-swiper
+      &-slide
+        &:nth-of-type(3)
+          .feedback
+            margin-top: 35px
+        &:nth-of-type(1), &:nth-of-type(4)
+          .feedback
+            margin-top: 20px
     
 @media screen and ( max-width: 480px )
   .hero      
@@ -96,6 +120,8 @@
       width: 89%
     &__input 
       padding: 18px 28px
+  
+      
 
 @media screen and ( max-width: 365px )
   .signup
@@ -111,3 +137,20 @@
   .join__btn
     padding: 15px 13px
     font-size: 19px
+  .feedback
+    &-swiper
+      &-slide
+        &:nth-of-type(3)
+          .feedback
+            margin-top: 70px
+
+@media screen and ( min-width: 993px )
+  .hero__btn, .join__btn, .signup__btn
+    &:hover
+      background: #12bc82
+      color: #ffdd0c
+  .cards__card
+    &:hover
+      transform: scale(1.1)
+      transition: transform 0.2s
+

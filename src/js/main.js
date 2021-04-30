@@ -1,3 +1,4 @@
+//Слайдеры
 const swiper = new Swiper('.advantage-swiper-container', {
   // Optional parameters
   loop: true,
@@ -9,31 +10,25 @@ const swiper = new Swiper('.advantage-swiper-container', {
   }
 });
 
-
-
 const swiper2 = new Swiper('.card-swiper-container', {
-  // Optional parameters
   loop: true,
   spaceBetween: 40,
 
-  // If we need pagination
   pagination: {
     el: '.card-swiper-pagination',
   }
 });
 
-
 const swiper3 = new Swiper('.feedback-swiper-container', {
-  // Optional parameters
   loop: true,
   spaceBetween: 40,
 
-  // If we need pagination
   pagination: {
     el: '.feedback-swiper-pagination',
   }
 });
 
+// ресайз окна
 const resizeWindow = () => {
 
   const changeText = (section, str) => {
@@ -76,3 +71,36 @@ const resizeWindow = () => {
 }
 
 resizeWindow();
+
+// плавный скролл
+const scrollingDown = () => {
+  const scrollLinks = document.querySelectorAll('a[href*="#"]');
+  scrollLinks.forEach((scrollLink) => {
+    scrollLink.addEventListener('click', (elem) => {
+      elem.preventDefault();
+      const blockID = scrollLink.getAttribute('href').substr(1);
+      if (document.getElementById(blockID) !== null) {
+        document.getElementById(blockID).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+}
+
+scrollingDown();
+
+// валидация формы
+
+const validation = () => {
+
+  const input = document.querySelector('input');
+
+  input.addEventListener('input', () => {
+    input.value = input.value.replace(/[^a-zA-Z\.\@\_\-\s\d]/gi,'');
+  });
+
+};
+
+validation();

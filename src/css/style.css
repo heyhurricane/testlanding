@@ -335,14 +335,16 @@ img {
 .btn {
   border: none;
   border-radius: 10px;
-  background-color: #c8ead6;
+  background-color: #12bc82;
   background-image: linear-gradient(63deg, #12bc82 0%, #bfdf2c 100%);
   color: #ffffff;
   font-family: 'Circe';
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  cursor: pointer; }
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center; }
 
 .swiper-pagination {
   left: 50%;
@@ -384,7 +386,8 @@ img {
     margin-bottom: 39px; }
   .hero__btn {
     padding: 21px 60px 21px;
-    max-width: 330px; }
+    max-width: 330px;
+    display: block; }
   .hero__logo {
     margin-bottom: 76px; }
 
@@ -634,6 +637,9 @@ img {
 .feedback-swiper-pagination {
   margin-bottom: 53px; }
 
+.feedback-swiper-slide:nth-of-type(3) .feedback {
+  margin-top: 20px; }
+
 .signup {
   background: url(../img/bg-3.jpg) no-repeat center/cover;
   padding: 145px 0 20px; }
@@ -756,15 +762,25 @@ img {
   .advantage-swiper-pagination {
     margin-bottom: 47px; }
   .feedback-swiper-container {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .card-swiper-slide:nth-of-type(2) .card, .card-swiper-slide:nth-of-type(3) .card, .card-swiper-slide:nth-of-type(5) .card {
+    margin-top: 20px; }
+  .advantage:nth-of-type(1) .image {
+    left: -28%; } }
 
 @media screen and (max-width: 768px) {
   .join__text {
-    font-size: 22px; } }
+    font-size: 22px; }
+  .feedback-slide:nth-of-type(3) .feedback {
+    margin-top: 30px; } }
 
 @media screen and (max-width: 576px) {
   .hero__text {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .feedback-swiper-slide:nth-of-type(3) .feedback {
+    margin-top: 35px; }
+  .feedback-swiper-slide:nth-of-type(1) .feedback, .feedback-swiper-slide:nth-of-type(4) .feedback {
+    margin-top: 20px; } }
 
 @media screen and (max-width: 480px) {
   .hero {
@@ -806,4 +822,14 @@ img {
     font-size: 25px; }
   .join__btn {
     padding: 15px 13px;
-    font-size: 19px; } }
+    font-size: 19px; }
+  .feedback-swiper-slide:nth-of-type(3) .feedback {
+    margin-top: 70px; } }
+
+@media screen and (min-width: 993px) {
+  .hero__btn:hover, .join__btn:hover, .signup__btn:hover {
+    background: #12bc82;
+    color: #ffdd0c; }
+  .cards__card:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s; } }

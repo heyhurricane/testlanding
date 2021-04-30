@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
   <title>TastyCookery</title>
 </head>
 <body>
@@ -25,7 +26,7 @@
       <!-- /.logo -->
         <h1 class="title hero__title">Домашние простые&nbsp;рецепты</h1>
         <p class="text hero__text">Собирайте рецепты в recipe box</p>
-        <button class="btn hero__btn">Присоединиться к сообществу</button>
+        <a href="#signup" class="btn hero__btn">Присоединиться к сообществу</a>
     </div>
     <!-- /.container hero__container -->
   </section>
@@ -213,7 +214,7 @@
   <div class="join">
     <div class="container join__container">
       <p class="text join__text">Удобно получать на емейл уникальные проверенные рецепты, которые&nbsp;дружная&nbsp;команда Tastycookery попробовала сама и рекомендует</p>
-      <button class="btn join__btn">Стать членом семьи Tastycookery <span class="text-bold join__text-bold">бесплатно</span></button>
+      <a href="#signup" class="btn join__btn">Стать членом семьи Tastycookery <span class="text-bold join__text-bold">бесплатно</span></a>
     </div>
     <!-- /.container join__container -->
   </div>
@@ -360,13 +361,13 @@
   </section>
   <!-- /.feedbacks -->
 
-  <div class="signup">
+  <div class="signup" id="signup">
     <div class="container signup__container">
       <p class="text signup__text">Sign up to receive daily manually selected recipes, delicious weekly articles, 3&#8209;piece&nbsp;sets&nbsp;of slow cooker, vegetarian, and&nbsp;lunch ideas, plus Quick&Easy recipes and&nbsp;Nutrition Value flashcards via email.</p>
       <div class="block signup__block">
         <form action="" class="form signup__form">
-          <input type="email" placeholder="Enter your email" class="input signup__input">
-          <button class="btn signup__btn">Sign up</button>
+          <input type="email" name="useremail" id="emailofuser" placeholder="Enter your email" class="input signup__input" required>
+          <button class="btn signup__btn" type="submit">Sign up</button>
         </form>
         <span class="privacy signup__privacy">By signing up I agree to the terms of the <a href="#" class="privacy-link signup__privacy-link">Privacy Policy</a></span>
       </div>
