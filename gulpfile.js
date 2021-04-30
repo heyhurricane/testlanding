@@ -1,14 +1,14 @@
 const {src, dest, watch, series} = require('gulp');
 // const {src, dest, watch} = require('gulp');
 const browserSync = require('browser-sync').create();
-// const cssmin = require('gulp-cssmin');
+const cssmin = require('gulp-cssmin');
 // const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
-// const cleanCSS = require('gulp-clean-css');
-// const minify = require('gulp-minify');
-// const htmlmin = require('gulp-htmlmin');
-// const tinypng = require('gulp-tinypng-compress');
+const cleanCSS = require('gulp-clean-css');
+const minify = require('gulp-minify');
+const htmlmin = require('gulp-htmlmin');
+const tinypng = require('gulp-tinypng-compress');
 
 
 // Static server
